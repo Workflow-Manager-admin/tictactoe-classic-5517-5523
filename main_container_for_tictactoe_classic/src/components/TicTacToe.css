@@ -1,0 +1,87 @@
+/* TicTacToe Container */
+.tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: var(--kavia-dark);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+/* Game status display */
+.game-status {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--kavia-orange);
+}
+
+/* Board styling */
+.board {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+/* Square styling */
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: #2a2a2a;
+  border: 2px solid var(--border-color);
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.square:hover {
+  background-color: #383838;
+  transform: scale(1.02);
+}
+
+/* Style X and O differently */
+.square:has(span.x) {
+  color: var(--kavia-orange);
+}
+
+.square:has(span.o) {
+  color: #3498db; /* Blue color for O */
+}
+
+/* Reset button */
+.reset-button {
+  background-color: var(--kavia-orange);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+.reset-button:hover {
+  background-color: #FF8B4D;
+}
